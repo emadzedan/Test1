@@ -20,31 +20,10 @@
             }
             #Content{
                 width:800px;
-                height:475px;
+                height:500px;
                 border: 1px solid #333;
                 background-color:#FFF;
             }
-			#VideoContent{
-				position:absolute;
-				z-index:2;
-			}
-			#vCon{
-				width:750px;
-                height:425px;
-				background-color:#000;
-				padding:25px;
-			}
-			#Video{
-				border: 1px solid #333;	
-			}
-			.close{
-				color:#FFF;
-				float:right;
-				margin-right:5px;
-				cursor:pointer;
-				font-family:Verdana, Geneva, sans-serif;
-				padding-bottom:5px;
-			}
         </style>
         <script src="./Javascript/jquery-1.6.3.min.js"></script>
         <script src="./Javascript/Functions.js"></script>
@@ -52,8 +31,6 @@
 </head>
 
 <body onmousedown="return false;">
-	<? echo "Emad Zedan PHP Test";?>
-    <div id="Content"><iframe width="800px" height="475px" src="Module1Part4.html" scrolling="no" frameborder="0" id="iFrameContent"/></div>
-    <div id="VideoContent"></div>
+    <div id="Content"><iframe width="800px" height="500px" src="content.php" scrolling="no" frameborder="0" id="iFrameContent"/></div>
 </body>
 </html>
