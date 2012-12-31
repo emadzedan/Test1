@@ -52,6 +52,7 @@
 </head>
 
 <body onmousedown="return false;">
+	<? echo "Emad Zedan PHP Test";?>
     <div id="Content"><iframe width="800px" height="475px" src="Module1Part4.html" scrolling="no" frameborder="0" id="iFrameContent"/></div>
     <div id="VideoContent"></div>
 </body>
