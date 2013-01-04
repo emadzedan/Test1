@@ -26,6 +26,9 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       //Edge binding end
 
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 583, function(sym, e) {
+         $.cookie('Name', 'Emad Zedan', { expires: 7 });
+         $.cookie('Age', '33', { expires: 7 });
+         
          audioElement.currentTime = 0.1;
          audioElement.play();
          int0 = setInterval(function() {
@@ -208,6 +211,20 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
          var int4_2 = 0;
          var int5_1 = 0;
          var int5_2 = 0;
+         
+         
+         
+         yepnope({
+                   nope:[
+                   'Javascript/jquery.cookie.js'
+                   ],
+                   complete: init
+         });
+         function init() {
+         
+         //create your cookie's initial values here
+         alert("Ready to use cookies");
+         }
 
       });
       //Edge binding end
@@ -398,7 +415,10 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       //Edge binding end
 
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 41000, function(sym, e) {
+         alert('Name is:'+$.cookie('Name') + 'Age is:' + $.cookie('Age'));
+         
          clearInterval(int0);
+         
 
       });
       //Edge binding end

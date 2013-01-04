@@ -321,8 +321,7 @@ var symbols = {
             { id: "eid54", tween: [ "style", "${_ArrowAnimation}", "left", '96px', { fromValue: '9px'}], position: 13000, duration: 0 },
             { id: "eid61", tween: [ "style", "${_ArrowAnimation}", "left", '446px', { fromValue: '96px'}], position: 18040, duration: 0 },
             { id: "eid63", tween: [ "style", "${_ArrowAnimation}", "left", '541px', { fromValue: '446px'}], position: 20000, duration: 0 },
-            { id: "eid129", tween: [ "style", "${_Menu3}", "display", 'block', { fromValue: 'none'}], position: 39665, duration: 0 },
-            { id: "eid141", tween: [ "style", "${_Menu3}", "display", 'none', { fromValue: 'block'}], position: 40250, duration: 0 },
+            { id: "eid27", tween: [ "style", "${_StaticCircle}", "display", 'block', { fromValue: 'none'}], position: 583, duration: 0 },
             { id: "eid175", tween: [ "style", "${_Menu2}", "display", 'block', { fromValue: 'none'}], position: 39000, duration: 0 },
             { id: "eid176", tween: [ "style", "${_Menu2}", "display", 'none', { fromValue: 'block'}], position: 39665, duration: 0 },
             { id: "eid26", tween: [ "style", "${_Title}", "display", 'block', { fromValue: 'none'}], position: 583, duration: 0 },
@@ -331,12 +330,12 @@ var symbols = {
             { id: "eid143", tween: [ "style", "${_Menu4}", "display", 'none', { fromValue: 'block'}], position: 41000, duration: 0 },
             { id: "eid139", tween: [ "style", "${_Menu4}", "left", '0px', { fromValue: '0px'}], position: 39665, duration: 0 },
             { id: "eid157", tween: [ "style", "${_Menu5}", "display", 'block', { fromValue: 'none'}], position: 41000, duration: 0 },
-            { id: "eid140", tween: [ "style", "${_Menu4}", "top", '0px', { fromValue: '0px'}], position: 39665, duration: 0 },
+            { id: "eid24", tween: [ "style", "${_Button4}", "display", 'block', { fromValue: 'none'}], position: 583, duration: 0 },
             { id: "eid18", tween: [ "style", "${_Title}", "top", '10px', { fromValue: '10px'}], position: 583, duration: 0 },
             { id: "eid58", tween: [ "style", "${_ArrowAnimation}", "display", 'block', { fromValue: 'none'}], position: 9000, duration: 0 },
             { id: "eid60", tween: [ "style", "${_ArrowAnimation}", "display", 'block', { fromValue: 'block'}], position: 11000, duration: 0 },
             { id: "eid68", tween: [ "style", "${_ArrowAnimation}", "display", 'none', { fromValue: 'block'}], position: 24000, duration: 0 },
-            { id: "eid24", tween: [ "style", "${_Button4}", "display", 'block', { fromValue: 'none'}], position: 583, duration: 0 },
+            { id: "eid140", tween: [ "style", "${_Menu4}", "top", '0px', { fromValue: '0px'}], position: 39665, duration: 0 },
             { id: "eid21", tween: [ "style", "${_Button2}", "display", 'block', { fromValue: 'none'}], position: 583, duration: 0 },
             { id: "eid67", tween: [ "style", "${_Play}", "display", 'block', { fromValue: 'none'}], position: 24000, duration: 0 },
             { id: "eid25", tween: [ "style", "${_Button1}", "display", 'block', { fromValue: 'none'}], position: 583, duration: 0 },
@@ -353,7 +352,8 @@ var symbols = {
             { id: "eid55", tween: [ "style", "${_ArrowAnimation}", "top", '71px', { fromValue: '230px'}], position: 13000, duration: 0 },
             { id: "eid62", tween: [ "style", "${_ArrowAnimation}", "top", '71px', { fromValue: '71px'}], position: 18040, duration: 0 },
             { id: "eid64", tween: [ "style", "${_ArrowAnimation}", "top", '216px', { fromValue: '71px'}], position: 20000, duration: 0 },
-            { id: "eid27", tween: [ "style", "${_StaticCircle}", "display", 'block', { fromValue: 'none'}], position: 583, duration: 0 },
+            { id: "eid129", tween: [ "style", "${_Menu3}", "display", 'block', { fromValue: 'none'}], position: 39665, duration: 0 },
+            { id: "eid141", tween: [ "style", "${_Menu3}", "display", 'none', { fromValue: 'block'}], position: 40250, duration: 0 },
             { id: "eid164", tween: [ "style", "${_FireworksAnimationCircle}", "display", 'block', { fromValue: 'none'}], position: 583, duration: 0 },
             { id: "eid12", tween: [ "style", "${_LoadingText}", "display", 'block', { fromValue: 'none'}], position: 500, duration: 0 },
             { id: "eid7", tween: [ "style", "${_LoadingText}", "display", 'none', { fromValue: 'block'}], position: 583, duration: 0 }         ]
@@ -444,12 +444,12 @@ var symbols = {
       fill: ['rgba(226,226,226,1.00)']
    },
    {
+      type: 'text',
       rect: ['10px','5px','276px','25px','auto','auto'],
-      font: ['Arial, Helvetica, sans-serif',18,'rgba(197,116,34,1.00)','normal','none',''],
       id: 'Text',
       text: 'Injaz Volunteering Cycle',
       align: 'left',
-      type: 'text'
+      font: ['Arial, Helvetica, sans-serif',18,'rgba(197,116,34,1.00)','normal','none','']
    }],
    symbolInstances: [
    ]
@@ -457,10 +457,10 @@ var symbols = {
    states: {
       "Base State": {
          "${_Rectangle}": [
+            ["style", "height", '35px'],
             ["style", "top", '0px'],
-            ["color", "background-color", 'rgba(226,226,226,1.00)'],
             ["style", "left", '0px'],
-            ["style", "height", '35px']
+            ["color", "background-color", 'rgba(226,226,226,1.00)']
          ],
          "${_Text}": [
             ["style", "top", '5px'],
@@ -515,20 +515,20 @@ var symbols = {
       fill: ['rgba(0,153,0,1.00)']
    },
    {
+      type: 'text',
       rect: ['16px','6px','auto','auto','auto','auto'],
-      font: ['Arial, Helvetica, sans-serif',30,'rgba(255,255,255,1.00)','normal','none','normal'],
       id: 'Text2Copy2',
       text: '3',
       align: 'right',
-      type: 'text'
+      font: ['Arial, Helvetica, sans-serif',30,'rgba(255,255,255,1.00)','normal','none','normal']
    },
    {
+      type: 'text',
       rect: ['42px','18px','127px','auto','auto','auto'],
-      font: ['Verdana, Geneva, sans-serif',10,'rgba(0,106,54,1.00)','400','none','normal'],
       id: 'Text3Copy2',
       text: 'Volunteer Training',
       align: 'center',
-      type: 'text'
+      font: ['Verdana, Geneva, sans-serif',10,'rgba(0,106,54,1.00)','400','none','normal']
    }],
    symbolInstances: [
    ]
@@ -612,20 +612,20 @@ var symbols = {
       fill: ['rgba(0,153,0,1.00)']
    },
    {
+      type: 'text',
       rect: ['16px','6px','auto','auto','auto','auto'],
-      font: ['Arial, Helvetica, sans-serif',30,'rgba(255,255,255,1.00)','normal','none','normal'],
       id: 'Text2Copy',
       text: '2',
       align: 'right',
-      type: 'text'
+      font: ['Arial, Helvetica, sans-serif',30,'rgba(255,255,255,1.00)','normal','none','normal']
    },
    {
+      type: 'text',
       rect: ['48px','18px','92px','auto','auto','auto'],
-      font: ['Verdana, Geneva, sans-serif',12,'rgba(0,106,54,1.00)','normal','none','normal'],
       id: 'Text3Copy',
       text: 'INJAZ Office',
       align: 'center',
-      type: 'text'
+      font: ['Verdana, Geneva, sans-serif',12,'rgba(0,106,54,1.00)','normal','none','normal']
    }],
    symbolInstances: [
    ]
@@ -709,20 +709,20 @@ var symbols = {
       fill: ['rgba(0,153,0,1.00)']
    },
    {
+      type: 'text',
       rect: ['16px','6px','auto','auto','auto','auto'],
-      font: ['Arial, Helvetica, sans-serif',30,'rgba(255,255,255,1.00)','normal','none','normal'],
       id: 'Text2',
       text: '1',
       align: 'right',
-      type: 'text'
+      font: ['Arial, Helvetica, sans-serif',30,'rgba(255,255,255,1.00)','normal','none','normal']
    },
    {
+      type: 'text',
       rect: ['50px','18px','135px','16px','auto','auto'],
-      font: ['Verdana, Geneva, sans-serif',11,'rgba(0,106,54,1.00)','normal','none','normal'],
       id: 'Text3',
       text: 'Volunteer / Company',
       align: 'center',
-      type: 'text'
+      font: ['Verdana, Geneva, sans-serif',11,'rgba(0,106,54,1.00)','normal','none','normal']
    }],
    symbolInstances: [
    ]
@@ -807,20 +807,20 @@ var symbols = {
       fill: ['rgba(0,153,0,1.00)']
    },
    {
+      type: 'text',
       rect: ['16px','6px','auto','auto','auto','auto'],
-      font: ['Arial, Helvetica, sans-serif',30,'rgba(255,255,255,1.00)','normal','none','normal'],
       id: 'Text2Copy3',
       text: '4',
       align: 'right',
-      type: 'text'
+      font: ['Arial, Helvetica, sans-serif',30,'rgba(255,255,255,1.00)','normal','none','normal']
    },
    {
+      type: 'text',
       rect: ['51px','18px','114px','auto','auto','auto'],
-      font: ['Verdana, Geneva, sans-serif',10,'rgba(0,106,54,1.00)','400','none','normal'],
       id: 'Text3Copy3',
       text: 'Home Preperation',
       align: 'center',
-      type: 'text'
+      font: ['Verdana, Geneva, sans-serif',10,'rgba(0,106,54,1.00)','400','none','normal']
    }],
    symbolInstances: [
    ]
@@ -904,20 +904,20 @@ var symbols = {
       fill: ['rgba(0,153,0,1.00)']
    },
    {
+      type: 'text',
       rect: ['16px','6px','auto','auto','auto','auto'],
-      font: ['Arial, Helvetica, sans-serif',30,'rgba(255,255,255,1.00)','normal','none','normal'],
       id: 'Text2Copy4',
       text: '5',
       align: 'right',
-      type: 'text'
+      font: ['Arial, Helvetica, sans-serif',30,'rgba(255,255,255,1.00)','normal','none','normal']
    },
    {
+      type: 'text',
       rect: ['50px','18px','117px','auto','auto','auto'],
-      font: ['Verdana, Geneva, sans-serif',10,'rgba(0,106,54,1.00)','400','none','normal'],
       id: 'Text3Copy4',
       text: 'Classroom Delivery',
       align: 'center',
-      type: 'text'
+      font: ['Verdana, Geneva, sans-serif',10,'rgba(0,106,54,1.00)','400','none','normal']
    }],
    symbolInstances: [
    ]
@@ -1323,12 +1323,12 @@ var symbols = {
          fill: ['rgba(255,108,0,1.00)']
       },
       {
+         rect: ['22px','2px','114px','19px','auto','auto'],
          font: ['Verdana, Geneva, sans-serif',12,'rgba(0,106,54,1.00)','normal','none','normal'],
-         type: 'text',
          id: 'Link1_1',
          text: 'Why Volunteer',
          align: 'left',
-         rect: ['22px','2px','114px','19px','auto','auto']
+         type: 'text'
       }]
    },
    {
@@ -1345,12 +1345,12 @@ var symbols = {
          fill: ['rgba(255,108,0,1.00)']
       },
       {
+         rect: ['24px','0px','112px','19px','auto','auto'],
          font: ['Verdana, Geneva, sans-serif',12,'rgba(0,106,54,1.00)','normal','none','normal'],
-         type: 'text',
          id: 'Link1_2',
          text: 'Benefits',
          align: 'left',
-         rect: ['24px','0px','112px','19px','auto','auto']
+         type: 'text'
       }]
    },
    {
@@ -1359,12 +1359,12 @@ var symbols = {
       rect: ['351px','363px','126','19','auto','auto'],
       c: [
       {
+         rect: ['-2px','2px','126px','14px','auto','auto'],
          font: ['Verdana, Geneva, sans-serif',12,'rgba(0,106,54,1.00)','normal','none','normal'],
-         type: 'text',
          id: 'Link1_Close',
          text: 'Close',
          align: 'center',
-         rect: ['-2px','2px','126px','14px','auto','auto']
+         type: 'text'
       },
       {
          id: 'OrangeArrow',
@@ -1404,56 +1404,56 @@ var symbols = {
    },
    {
       transform: [{1:0,0:0},{},{},['-1']],
-      type: 'image',
-      id: 'SubImage1',
-      display: 'none',
       rect: ['465px','75px','211px','357px','auto','auto'],
+      display: 'none',
+      id: 'SubImage1',
+      type: 'image',
       fill: ['rgba(0,0,0,0)','images/SubImage1.png','0px','0px']
    },
    {
+      rect: ['124px','72px','304px','19px','auto','auto'],
       font: ['Verdana, Geneva, sans-serif',16,'rgba(0,106,54,1)','normal','none','normal'],
-      type: 'text',
       display: 'none',
       id: 'Text3',
       text: 'Why Volunteer',
       align: 'left',
-      rect: ['124px','72px','304px','19px','auto','auto']
+      type: 'text'
    },
    {
+      rect: ['122px','102px','366px','170px','auto','auto'],
       font: ['Verdana, Geneva, sans-serif',14,'rgba(102,102,102,1.00)','normal','none','normal'],
-      type: 'text',
       display: 'none',
       id: 'Text3Copy',
       text: 'This is your contribution and giving back to the community. Companies and organizations (CEO’s and staff) all over the Arab World are increasingly becoming aware of the importance of doing volunteer work. More and more are volunteering with INJAZ.',
       align: 'left',
-      rect: ['122px','102px','366px','170px','auto','auto']
+      type: 'text'
    },
    {
+      rect: ['130px','79px','304px','19px','auto','auto'],
       font: ['Verdana, Geneva, sans-serif',16,'rgba(0,106,54,1)','normal','none','normal'],
-      type: 'text',
       display: 'none',
       id: 'Text3Copy3',
       text: 'Benefits',
       align: 'left',
-      rect: ['130px','79px','304px','19px','auto','auto']
+      type: 'text'
    },
    {
+      rect: ['308px','109px','366px','170px','auto','auto'],
       font: ['Verdana, Geneva, sans-serif',14,'rgba(102,102,102,1.00)','700','none','normal'],
-      type: 'text',
       display: 'none',
       id: 'Text3Copy2',
       text: 'How Companies Benefit from Volunteering Employees',
       align: 'left',
-      rect: ['308px','109px','366px','170px','auto','auto']
+      type: 'text'
    },
    {
+      rect: ['308px','139px','366px','233px','auto','auto'],
       font: ['Verdana, Geneva, sans-serif',14,'rgba(102,102,102,1.00)','normal','none','normal'],
-      type: 'text',
       display: 'none',
       id: 'Text3Copy6',
       text: 'There are lots of ways a company can be “socially responsible” or a “good corporate citizen.” Most seem to involve large sums of money being contributed to very important and worthwhile causes. These tend to be causes in the public spotlight – causes the media like to cover – resulting in favorable publicity for the companies and their brands. \rWhy, then, do hundreds of companies not only give financial support to Junior Achievement, but also give employees time off from their jobs to teach JA curricula in classrooms all over the world? Especially when there is very little publicity involved in supporting Junior Achievement?',
       align: 'left',
-      rect: ['308px','139px','366px','233px','auto','auto']
+      type: 'text'
    },
    {
       type: 'image',
@@ -1463,22 +1463,22 @@ var symbols = {
       fill: ['rgba(0,0,0,0)','images/Next_Circle.png','0px','0px']
    },
    {
+      rect: ['132px','75px','449px','19px','auto','auto'],
       font: ['Verdana, Geneva, sans-serif',16,'rgba(0,106,54,1)','normal','none','normal'],
-      type: 'text',
       display: 'none',
       id: 'Text3Copy5',
       text: 'The Studies on the benefits of volunteering:',
       align: 'left',
-      rect: ['132px','75px','449px','19px','auto','auto']
+      type: 'text'
    },
    {
+      rect: ['308px','99px','366px','85px','auto','auto'],
       font: ['Verdana, Geneva, sans-serif',13,'rgba(102,102,102,1.00)','400','none','normal'],
-      type: 'text',
       display: 'none',
       id: 'Text3Copy4',
       text: 'There are ample quantitative and qualitative studies that show that being a good corporate citizen can also be good for a company\'s bottom line. Research shows that there is a direct correlation between active community outreach programs and increased revenues and customer loyalty for businesses that engage in helping their communities.  Companies benefit by:',
       align: 'left',
-      rect: ['308px','99px','366px','85px','auto','auto']
+      type: 'text'
    },
    {
       type: 'image',
@@ -1584,22 +1584,6 @@ var symbols = {
             ["style", "left", '351px'],
             ["style", "top", '363px']
          ],
-         "${_Dot2}": [
-            ["style", "top", '8px'],
-            ["style", "height", '5px'],
-            ["color", "background-color", 'rgba(255,108,0,1)'],
-            ["style", "left", '11px'],
-            ["style", "width", '5px']
-         ],
-         "${_Link1_2}": [
-            ["style", "top", '0px'],
-            ["style", "text-align", 'left'],
-            ["style", "font-size", '12px'],
-            ["color", "color", 'rgba(0,106,54,1)'],
-            ["style", "font-family", 'Verdana, Geneva, sans-serif'],
-            ["style", "left", '24px'],
-            ["style", "width", '112px']
-         ],
          "${_Text3Copy6}": [
             ["style", "top", '139px'],
             ["style", "width", '543px'],
@@ -1610,30 +1594,52 @@ var symbols = {
             ["style", "left", '131px'],
             ["style", "font-size", '14px']
          ],
-         "${_OrangeArrow}": [
-            ["style", "left", '81px'],
-            ["style", "top", '4px']
+         "${_Link1_2}": [
+            ["style", "top", '0px'],
+            ["style", "text-align", 'left'],
+            ["style", "font-size", '12px'],
+            ["color", "color", 'rgba(0,106,54,1)'],
+            ["style", "font-family", 'Verdana, Geneva, sans-serif'],
+            ["style", "left", '24px'],
+            ["style", "width", '112px']
+         ],
+         "${_Dot2}": [
+            ["style", "top", '8px'],
+            ["style", "height", '5px'],
+            ["color", "background-color", 'rgba(255,108,0,1)'],
+            ["style", "left", '11px'],
+            ["style", "width", '5px']
+         ],
+         "${_Text3Copy2}": [
+            ["color", "color", 'rgba(102,102,102,1)'],
+            ["style", "font-weight", '700'],
+            ["style", "left", '131px'],
+            ["style", "width", '543px'],
+            ["style", "top", '109px'],
+            ["style", "text-align", 'left'],
+            ["style", "height", '30px'],
+            ["style", "font-size", '14px'],
+            ["style", "display", 'none']
+         ],
+         "${_Symbol_1}": [
+            ["style", "display", 'none']
          ],
          "${_Next_Circle}": [
             ["style", "top", '381px'],
             ["style", "left", '375px'],
             ["style", "display", 'none']
          ],
-         "${_Symbol_1}": [
+         "${_Previous_Circle}": [
+            ["style", "top", '381px'],
+            ["style", "left", '378px'],
             ["style", "display", 'none']
          ],
-         "${_CloseSub}": [
-            ["style", "display", 'none'],
-            ["style", "left", '131px'],
-            ["style", "cursor", 'pointer'],
-            ["style", "top", '12px']
+         "${_Text}": [
+            ["style", "text-align", '']
          ],
          "${_Link1_1Group}": [
             ["style", "left", '341px'],
             ["style", "top", '305px']
-         ],
-         "${_Text}": [
-            ["style", "text-align", '']
          ],
          "${_Dot}": [
             ["style", "top", '8px'],
@@ -1647,27 +1653,21 @@ var symbols = {
             ["style", "left", '0px'],
             ["style", "display", 'none']
          ],
-         "${_Previous_Circle}": [
-            ["style", "top", '381px'],
-            ["style", "left", '378px'],
+         "${_CloseSub}": [
+            ["style", "top", '12px'],
+            ["style", "cursor", 'pointer'],
+            ["style", "left", '131px'],
             ["style", "display", 'none']
          ],
-         "${_Text3Copy2}": [
-            ["color", "color", 'rgba(102,102,102,1)'],
-            ["style", "font-weight", '700'],
-            ["style", "left", '131px'],
-            ["style", "width", '543px'],
-            ["style", "top", '109px'],
-            ["style", "text-align", 'left'],
-            ["style", "height", '30px'],
-            ["style", "font-size", '14px'],
-            ["style", "display", 'none']
+         "${_OrangeArrow}": [
+            ["style", "left", '81px'],
+            ["style", "top", '4px']
          ],
          "${_SubImage1}": [
+            ["style", "display", 'none'],
             ["style", "top", '75px'],
-            ["transform", "scaleX", '-1'],
             ["style", "left", '465px'],
-            ["style", "display", 'none']
+            ["transform", "scaleX", '-1']
          ]
       }
    },
@@ -1743,12 +1743,12 @@ var symbols = {
          fill: ['rgba(255,108,0,1.00)']
       },
       {
+         rect: ['24px','2px','110px','14px','auto','auto'],
          font: ['Verdana, Geneva, sans-serif',10,'rgba(0,106,54,1.00)','normal','none','normal'],
-         type: 'text',
          id: 'Link1_1',
          text: 'Brief About INJAZ',
          align: 'left',
-         rect: ['24px','2px','110px','14px','auto','auto']
+         type: 'text'
       }]
    },
    {
@@ -1765,12 +1765,12 @@ var symbols = {
          fill: ['rgba(255,108,0,1.00)']
       },
       {
+         rect: ['24px','4px','110px','13px','auto','auto'],
          font: ['Verdana, Geneva, sans-serif',10,'rgba(0,106,54,1.00)','normal','none','normal'],
-         type: 'text',
          id: 'Link1_2',
          text: 'Sign up form',
          align: 'left',
-         rect: ['24px','4px','110px','13px','auto','auto']
+         type: 'text'
       }]
    },
    {
@@ -1779,12 +1779,12 @@ var symbols = {
       rect: ['66px','318px','126','19','auto','auto'],
       c: [
       {
+         rect: ['0px','3px','126px','14px','auto','auto'],
          font: ['Verdana, Geneva, sans-serif',10,'rgba(0,106,54,1.00)','normal','none','normal'],
-         type: 'text',
          id: 'Link1_Close',
          text: 'Close',
          align: 'center',
-         rect: ['0px','3px','126px','14px','auto','auto']
+         type: 'text'
       },
       {
          id: 'OrangeArrow',
@@ -1809,22 +1809,22 @@ var symbols = {
       fill: ['rgba(0,0,0,0)','images/CloseSub.png','0px','0px']
    },
    {
+      rect: ['127px','74px','304px','19px','auto','auto'],
       font: ['Verdana, Geneva, sans-serif',16,'rgba(0,106,54,1)','normal','none','normal'],
-      type: 'text',
       display: 'none',
       id: 'Text3',
       text: 'Brief about INJAZ',
       align: 'left',
-      rect: ['127px','74px','304px','19px','auto','auto']
+      type: 'text'
    },
    {
+      rect: ['308px','97px','366px','170px','auto','auto'],
       font: ['Verdana, Geneva, sans-serif',14,'rgba(102,102,102,1.00)','normal','none','normal'],
-      type: 'text',
       display: 'none',
       id: 'Text3Copy',
       text: 'At the INJAZ office, you will receive general information about our organization:',
       align: 'left',
-      rect: ['308px','97px','366px','170px','auto','auto']
+      type: 'text'
    },
    {
       type: 'group',
@@ -1833,12 +1833,12 @@ var symbols = {
       rect: ['163px','139px','503','122','auto','auto'],
       c: [
       {
+         rect: ['-20px','5px','491px','170px','auto','auto'],
          font: ['Verdana, Geneva, sans-serif',14,'rgba(102,102,102,1.00)','normal','none','normal'],
-         type: 'text',
          id: 'Text3Copy6',
          text: 'History',
          align: 'left',
-         rect: ['-20px','5px','491px','170px','auto','auto']
+         type: 'text'
       },
       {
          rect: ['-32px','9px','5px','5px','auto','auto'],
@@ -1849,12 +1849,12 @@ var symbols = {
          fill: ['rgba(102,102,102,1.00)']
       },
       {
+         rect: ['-20px','35px','491px','170px','auto','auto'],
          font: ['Verdana, Geneva, sans-serif',14,'rgba(102,102,102,1.00)','normal','none','normal'],
-         type: 'text',
          id: 'Text3Copy7',
          text: 'Mission and Vision',
          align: 'left',
-         rect: ['-20px','35px','491px','170px','auto','auto']
+         type: 'text'
       },
       {
          rect: ['-32px','39px','5px','5px','auto','auto'],
@@ -1865,12 +1865,12 @@ var symbols = {
          fill: ['rgba(102,102,102,1.00)']
       },
       {
+         rect: ['-20px','65px','491px','170px','auto','auto'],
          font: ['Verdana, Geneva, sans-serif',14,'rgba(102,102,102,1.00)','normal','none','normal'],
-         type: 'text',
          id: 'Text3Copy8',
          text: 'Mode of operation',
          align: 'left',
-         rect: ['-20px','65px','491px','170px','auto','auto']
+         type: 'text'
       },
       {
          rect: ['-32px','69px','5px','5px','auto','auto'],
@@ -1881,12 +1881,12 @@ var symbols = {
          fill: ['rgba(102,102,102,1.00)']
       },
       {
+         rect: ['-20px','95px','491px','170px','auto','auto'],
          font: ['Verdana, Geneva, sans-serif',14,'rgba(102,102,102,1.00)','normal','none','normal'],
-         type: 'text',
          id: 'Text3Copy9',
          text: 'How we can cooperate',
          align: 'left',
-         rect: ['-20px','95px','491px','170px','auto','auto']
+         type: 'text'
       },
       {
          rect: ['-32px','99px','5px','5px','auto','auto'],
@@ -1898,22 +1898,22 @@ var symbols = {
       }]
    },
    {
+      rect: ['129px','79px','304px','19px','auto','auto'],
       font: ['Verdana, Geneva, sans-serif',16,'rgba(0,106,54,1)','normal','none','normal'],
-      type: 'text',
       display: 'none',
       id: 'Text3Copy3',
       text: 'Sign-up Form',
       align: 'left',
-      rect: ['129px','79px','304px','19px','auto','auto']
+      type: 'text'
    },
    {
+      rect: ['308px','109px','437px','19px','auto','auto'],
       font: ['Verdana, Geneva, sans-serif',14,'rgba(102,102,102,1.00)','normal','none','normal'],
-      type: 'text',
       display: 'none',
       id: 'Text3Copy2',
       text: 'Please fill in the sign up form and send to our INJAZ office.',
       align: 'left',
-      rect: ['308px','109px','437px','19px','auto','auto']
+      type: 'text'
    },
    {
       type: 'image',
@@ -1927,15 +1927,15 @@ var symbols = {
    },
    states: {
       "Base State": {
-         "${_Text3Copy9}": [
-            ["style", "top", '95px'],
-            ["style", "font-size", '14px'],
+         "${_Text3Copy8}": [
+            ["style", "top", '65px'],
+            ["style", "width", '491px'],
             ["style", "text-align", 'left'],
-            ["style", "display", 'block'],
             ["color", "color", 'rgba(102,102,102,1)'],
+            ["style", "display", 'block'],
             ["style", "height", '32px'],
             ["style", "left", '-20px'],
-            ["style", "width", '491px']
+            ["style", "font-size", '14px']
          ],
          "${_Text3Copy}": [
             ["style", "top", '97px'],
@@ -1955,10 +1955,9 @@ var symbols = {
             ["style", "left", '127px'],
             ["style", "font-size", '16px']
          ],
-         "${_SubBG}": [
-            ["style", "top", '0px'],
-            ["style", "left", '0px'],
-            ["style", "display", 'none']
+         "${_Link1_2Group}": [
+            ["style", "left", '56px'],
+            ["style", "top", '290px']
          ],
          "${_Text3Copy3}": [
             ["style", "top", '79px'],
@@ -2017,9 +2016,10 @@ var symbols = {
             ["style", "left", '0px'],
             ["style", "width", '126px']
          ],
-         "${_Link1_2Group}": [
-            ["style", "left", '56px'],
-            ["style", "top", '290px']
+         "${_SubBG}": [
+            ["style", "top", '0px'],
+            ["style", "left", '0px'],
+            ["style", "display", 'none']
          ],
          "${_CloseGroup1}": [
             ["style", "left", '66px'],
@@ -2075,10 +2075,10 @@ var symbols = {
             ["style", "width", '5px']
          ],
          "${_CloseSub}": [
-            ["style", "display", 'none'],
-            ["style", "left", '131px'],
+            ["style", "top", '12px'],
             ["style", "cursor", 'pointer'],
-            ["style", "top", '12px']
+            ["style", "left", '131px'],
+            ["style", "display", 'none']
          ],
          "${_Group}": [
             ["style", "display", 'none'],
@@ -2114,15 +2114,15 @@ var symbols = {
             ["style", "left", '-32px'],
             ["style", "width", '5px']
          ],
-         "${_Text3Copy8}": [
-            ["style", "top", '65px'],
-            ["style", "width", '491px'],
+         "${_Text3Copy9}": [
+            ["style", "top", '95px'],
+            ["style", "font-size", '14px'],
             ["style", "text-align", 'left'],
-            ["color", "color", 'rgba(102,102,102,1)'],
             ["style", "display", 'block'],
+            ["color", "color", 'rgba(102,102,102,1)'],
             ["style", "height", '32px'],
             ["style", "left", '-20px'],
-            ["style", "font-size", '14px']
+            ["style", "width", '491px']
          ]
       }
    },
@@ -2142,11 +2142,11 @@ var symbols = {
             { id: "eid78", tween: [ "style", "${_Text3}", "display", 'none', { fromValue: 'block'}], position: 1000, duration: 0 },
             { id: "eid112", tween: [ "style", "${_Text3Copy}", "left", '129px', { fromValue: '129px'}], position: 500, duration: 0 },
             { id: "eid117", tween: [ "style", "${_Text3Copy}", "height", '42px', { fromValue: '42px'}], position: 500, duration: 0 },
-            { id: "eid80", tween: [ "style", "${_Text3Copy3}", "display", 'block', { fromValue: 'none'}], position: 1000, duration: 0 },
+            { id: "eid73", tween: [ "style", "${_CloseSub}", "display", 'block', { fromValue: 'none'}], position: 500, duration: 0 },
             { id: "eid70", tween: [ "style", "${_SubBG}", "display", 'block', { fromValue: 'none'}], position: 500, duration: 0 },
             { id: "eid120", tween: [ "style", "${_PDFIcon}", "display", 'block', { fromValue: 'none'}], position: 1000, duration: 0 },
+            { id: "eid80", tween: [ "style", "${_Text3Copy3}", "display", 'block', { fromValue: 'none'}], position: 1000, duration: 0 },
             { id: "eid113", tween: [ "style", "${_Text3Copy}", "width", '550px', { fromValue: '550px'}], position: 500, duration: 0 },
-            { id: "eid73", tween: [ "style", "${_CloseSub}", "display", 'block', { fromValue: 'none'}], position: 500, duration: 0 },
             { id: "eid74", tween: [ "style", "${_Text3Copy}", "display", 'block', { fromValue: 'none'}], position: 500, duration: 0 },
             { id: "eid77", tween: [ "style", "${_Text3Copy}", "display", 'none', { fromValue: 'block'}], position: 1000, duration: 0 },
             { id: "eid121", tween: [ "style", "${_Text3Copy2}", "display", 'block', { fromValue: 'none'}], position: 1000, duration: 0 },
@@ -2187,12 +2187,12 @@ var symbols = {
          fill: ['rgba(255,108,0,1.00)']
       },
       {
+         rect: ['20px','5px','116px','15px','auto','auto'],
          font: ['Verdana, Geneva, sans-serif',10,'rgba(0,106,54,1.00)','normal','none','normal'],
-         type: 'text',
          id: 'Link1_1',
          text: 'Online Training',
          align: 'left',
-         rect: ['20px','5px','116px','15px','auto','auto']
+         type: 'text'
       }]
    },
    {
@@ -2209,12 +2209,12 @@ var symbols = {
          fill: ['rgba(255,108,0,1.00)']
       },
       {
+         rect: ['20px','5px','111px','13px','auto','auto'],
          font: ['Verdana, Geneva, sans-serif',10,'rgba(0,106,54,1.00)','400','none','normal'],
-         type: 'text',
          id: 'Link1_2',
          text: 'INJAZ Training Kit',
          align: 'left',
-         rect: ['20px','5px','111px','13px','auto','auto']
+         type: 'text'
       }]
    },
    {
@@ -2223,12 +2223,12 @@ var symbols = {
       rect: ['184px','173px','126','19','auto','auto'],
       c: [
       {
+         rect: ['0px','3px','126px','15px','auto','auto'],
          font: ['Verdana, Geneva, sans-serif',10,'rgba(0,106,54,1.00)','normal','none','normal'],
-         type: 'text',
          id: 'Link1_Close',
          text: 'Close',
          align: 'center',
-         rect: ['0px','3px','126px','15px','auto','auto']
+         type: 'text'
       },
       {
          id: 'OrangeArrow',
@@ -2253,40 +2253,40 @@ var symbols = {
       fill: ['rgba(0,0,0,0)','images/CloseSub.png','0px','0px']
    },
    {
+      rect: ['130px','79px','304px','16px','auto','auto'],
       font: ['Verdana, Geneva, sans-serif',16,'rgba(0,106,54,1)','normal','none','normal'],
-      type: 'text',
       display: 'none',
       id: 'Text3',
       text: 'Online Training',
       align: 'left',
-      rect: ['130px','79px','304px','16px','auto','auto']
+      type: 'text'
    },
    {
+      rect: ['308px','109px','366px','170px','auto','auto'],
       font: ['Verdana, Geneva, sans-serif',12,'rgba(102,102,102,1.00)','normal','none','normal'],
-      type: 'text',
       display: 'none',
       id: 'Text3Copy',
       text: 'Preparation is key to a successful lesson delivery. <br>The Online Volunteer Training includes very useful tips on preparation for your lessons.<br><br>We highly recommend that you revisit this section from time to time.<br><br>Enjoy!<br>',
       align: 'left',
-      rect: ['308px','109px','366px','170px','auto','auto']
+      type: 'text'
    },
    {
+      rect: ['130px','79px','304px','19px','auto','auto'],
       font: ['Verdana, Geneva, sans-serif',16,'rgba(0,106,54,1)','normal','none','normal'],
-      type: 'text',
       display: 'none',
       id: 'Text3Copy3',
       text: 'The INJAZ Training Kit',
       align: 'left',
-      rect: ['130px','79px','304px','19px','auto','auto']
+      type: 'text'
    },
    {
+      rect: ['308px','99px','366px','170px','auto','auto'],
       font: ['Verdana, Geneva, sans-serif',14,'rgba(102,102,102,1.00)','normal','none','normal'],
-      type: 'text',
       display: 'none',
       id: 'Text3Copy2',
       text: 'Once you are done with the online training and ready to go into the classroom, you will be provided with the INJAZ training kit that includes:',
       align: 'left',
-      rect: ['308px','99px','366px','170px','auto','auto']
+      type: 'text'
    },
    {
       type: 'group',
@@ -2295,12 +2295,12 @@ var symbols = {
       rect: ['163','139px','503','122','auto','auto'],
       c: [
       {
+         rect: ['-20px','4px','491px','15px','auto','auto'],
          font: ['Verdana, Geneva, sans-serif',14,'rgba(102,102,102,1.00)','normal','none','normal'],
-         type: 'text',
          id: 'Text3Copy7',
          text: 'Volunteer Training Guide',
          align: 'left',
-         rect: ['-20px','4px','491px','15px','auto','auto']
+         type: 'text'
       },
       {
          rect: ['-32px','9px','5px','5px','auto','auto'],
@@ -2311,12 +2311,12 @@ var symbols = {
          fill: ['rgba(102,102,102,1.00)']
       },
       {
+         rect: ['-20px','34px','491px','20px','auto','auto'],
          font: ['Verdana, Geneva, sans-serif',14,'rgba(102,102,102,1.00)','normal','none','normal'],
-         type: 'text',
          id: 'Text3Copy6',
          text: 'Participant’s book/guide',
          align: 'left',
-         rect: ['-20px','34px','491px','20px','auto','auto']
+         type: 'text'
       },
       {
          rect: ['-32px','39px','5px','5px','auto','auto'],
@@ -2327,12 +2327,12 @@ var symbols = {
          fill: ['rgba(102,102,102,1.00)']
       },
       {
+         rect: ['-20px','64px','491px','15px','auto','auto'],
          font: ['Verdana, Geneva, sans-serif',14,'rgba(102,102,102,1.00)','normal','none','normal'],
-         type: 'text',
          id: 'Text3Copy5',
          text: 'Stationary',
          align: 'left',
-         rect: ['-20px','64px','491px','15px','auto','auto']
+         type: 'text'
       },
       {
          rect: ['-32px','69px','5px','5px','auto','auto'],
@@ -2343,12 +2343,12 @@ var symbols = {
          fill: ['rgba(102,102,102,1.00)']
       },
       {
+         rect: ['-20px','94px','491px','15px','auto','auto'],
          font: ['Verdana, Geneva, sans-serif',14,'rgba(102,102,102,1.00)','normal','none','normal'],
-         type: 'text',
          id: 'Text3Copy4',
          text: 'Training tools',
          align: 'left',
-         rect: ['-20px','94px','491px','15px','auto','auto']
+         type: 'text'
       },
       {
          rect: ['-32px','99px','5px','5px','auto','auto'],
@@ -2398,10 +2398,10 @@ var symbols = {
             ["style", "left", '-20px'],
             ["style", "font-size", '14px']
          ],
-         "${_Link1_2Group}": [
-            ["style", "height", '38px'],
-            ["style", "left", '174px'],
-            ["style", "top", '135px']
+         "${_InternetBall}": [
+            ["style", "top", '219px'],
+            ["style", "left", '336px'],
+            ["style", "display", 'none']
          ],
          "${_Text3Copy3}": [
             ["style", "top", '79px'],
@@ -2421,10 +2421,10 @@ var symbols = {
             ["style", "left", '-20px'],
             ["style", "width", '491px']
          ],
-         "${_InternetBall}": [
-            ["style", "top", '219px'],
-            ["style", "left", '336px'],
-            ["style", "display", 'none']
+         "${_Link1_2Group}": [
+            ["style", "height", '38px'],
+            ["style", "left", '174px'],
+            ["style", "top", '135px']
          ],
          "${_Link1_1}": [
             ["style", "top", '5px'],
@@ -2484,15 +2484,12 @@ var symbols = {
             ["style", "left", '184px'],
             ["style", "top", '173px']
          ],
-         "${_Text3Copy6}": [
-            ["style", "top", '34px'],
-            ["style", "width", '491px'],
-            ["style", "text-align", 'left'],
-            ["color", "color", 'rgba(102,102,102,1)'],
-            ["style", "display", 'block'],
-            ["style", "height", '20px'],
-            ["style", "left", '-20px'],
-            ["style", "font-size", '14px']
+         "${_Dot2}": [
+            ["style", "top", '8px'],
+            ["style", "height", '5px'],
+            ["color", "background-color", 'rgba(255,108,0,1)'],
+            ["style", "left", '11px'],
+            ["style", "width", '5px']
          ],
          "${_Link1_2}": [
             ["color", "color", 'rgba(0,106,54,1)'],
@@ -2505,26 +2502,25 @@ var symbols = {
             ["style", "font-family", 'Verdana, Geneva, sans-serif'],
             ["style", "width", '111px']
          ],
-         "${_Dot2}": [
-            ["style", "top", '8px'],
-            ["style", "height", '5px'],
-            ["color", "background-color", 'rgba(255,108,0,1)'],
-            ["style", "left", '11px'],
-            ["style", "width", '5px']
-         ],
-         "${_Text3Copy2}": [
-            ["style", "top", '99px'],
-            ["style", "font-size", '14px'],
+         "${_Text3Copy6}": [
+            ["style", "top", '34px'],
+            ["style", "width", '491px'],
             ["style", "text-align", 'left'],
-            ["style", "display", 'none'],
             ["color", "color", 'rgba(102,102,102,1)'],
-            ["style", "height", '40px'],
-            ["style", "left", '129px'],
-            ["style", "width", '545px']
+            ["style", "display", 'block'],
+            ["style", "height", '20px'],
+            ["style", "left", '-20px'],
+            ["style", "font-size", '14px']
          ],
-         "${_Group}": [
-            ["style", "display", 'none'],
-            ["style", "top", '139px']
+         "${_OrangeArrow}": [
+            ["style", "left", '81px'],
+            ["style", "top", '4px']
+         ],
+         "${_CloseSub}": [
+            ["style", "top", '12px'],
+            ["style", "cursor", 'pointer'],
+            ["style", "left", '131px'],
+            ["style", "display", 'none']
          ],
          "${_EllipseCopy3}": [
             ["style", "top", '9px'],
@@ -2533,11 +2529,9 @@ var symbols = {
             ["style", "left", '-32px'],
             ["style", "width", '5px']
          ],
-         "${_CloseSub}": [
+         "${_Group}": [
             ["style", "display", 'none'],
-            ["style", "left", '131px'],
-            ["style", "cursor", 'pointer'],
-            ["style", "top", '12px']
+            ["style", "top", '139px']
          ],
          "${_Link1_1Group}": [
             ["style", "left", '174px'],
@@ -2565,9 +2559,15 @@ var symbols = {
             ["style", "left", '130px'],
             ["style", "font-size", '16px']
          ],
-         "${_OrangeArrow}": [
-            ["style", "left", '81px'],
-            ["style", "top", '4px']
+         "${_Text3Copy2}": [
+            ["style", "top", '99px'],
+            ["style", "font-size", '14px'],
+            ["style", "text-align", 'left'],
+            ["style", "display", 'none'],
+            ["color", "color", 'rgba(102,102,102,1)'],
+            ["style", "height", '40px'],
+            ["style", "left", '129px'],
+            ["style", "width", '545px']
          ],
          "${_EllipseCopy2}": [
             ["style", "top", '39px'],
@@ -2601,11 +2601,11 @@ var symbols = {
             { id: "eid112", tween: [ "style", "${_Text3Copy}", "left", '129px', { fromValue: '129px'}], position: 500, duration: 0 },
             { id: "eid135", tween: [ "style", "${_Group}", "display", 'block', { fromValue: 'none'}], position: 1000, duration: 0 },
             { id: "eid130", tween: [ "style", "${_Text3Copy}", "height", '110px', { fromValue: '110px'}], position: 500, duration: 0 },
-            { id: "eid113", tween: [ "style", "${_Text3Copy}", "width", '545px', { fromValue: '545px'}], position: 500, duration: 0 },
+            { id: "eid80", tween: [ "style", "${_Text3Copy3}", "display", 'block', { fromValue: 'none'}], position: 1000, duration: 0 },
             { id: "eid70", tween: [ "style", "${_SubBG}", "display", 'block', { fromValue: 'none'}], position: 500, duration: 0 },
             { id: "eid134", tween: [ "style", "${_Text3Copy2}", "height", '40px', { fromValue: '40px'}], position: 1005, duration: 0 },
+            { id: "eid113", tween: [ "style", "${_Text3Copy}", "width", '545px', { fromValue: '545px'}], position: 500, duration: 0 },
             { id: "eid73", tween: [ "style", "${_CloseSub}", "display", 'block', { fromValue: 'none'}], position: 500, duration: 0 },
-            { id: "eid80", tween: [ "style", "${_Text3Copy3}", "display", 'block', { fromValue: 'none'}], position: 1000, duration: 0 },
             { id: "eid74", tween: [ "style", "${_Text3Copy}", "display", 'block', { fromValue: 'none'}], position: 500, duration: 0 },
             { id: "eid77", tween: [ "style", "${_Text3Copy}", "display", 'none', { fromValue: 'block'}], position: 1000, duration: 0 },
             { id: "eid121", tween: [ "style", "${_Text3Copy2}", "display", 'block', { fromValue: 'none'}], position: 1000, duration: 0 },
@@ -2646,12 +2646,12 @@ var symbols = {
          fill: ['rgba(255,108,0,1.00)']
       },
       {
+         rect: ['-3px','6px','156px','13px','auto','auto'],
          font: ['Verdana, Geneva, sans-serif',10,'rgba(0,106,54,1.00)','400','none','normal'],
-         type: 'text',
          id: 'Link1_1',
          text: 'Before-classroom delivery',
          align: 'left',
-         rect: ['-3px','6px','156px','13px','auto','auto']
+         type: 'text'
       }]
    },
    {
@@ -2668,12 +2668,12 @@ var symbols = {
          fill: ['rgba(255,108,0,1.00)']
       },
       {
+         rect: ['-2px','3px','155px','13px','auto','auto'],
          font: ['Verdana, Geneva, sans-serif',10,'rgba(0,106,54,1.00)','400','none','normal'],
-         type: 'text',
          id: 'Link1_2',
          text: 'After-classroom delivery',
          align: 'left',
-         rect: ['-2px','3px','155px','13px','auto','auto']
+         type: 'text'
       }]
    },
    {
@@ -2682,12 +2682,12 @@ var symbols = {
       rect: ['542px','176px','126','19','auto','auto'],
       c: [
       {
+         rect: ['0px','2px','126px','16px','auto','auto'],
          font: ['Verdana, Geneva, sans-serif',10,'rgba(0,106,54,1.00)','normal','none','normal'],
-         type: 'text',
          id: 'Link1_Close',
          text: 'Close',
          align: 'center',
-         rect: ['0px','2px','126px','16px','auto','auto']
+         type: 'text'
       },
       {
          id: 'OrangeArrow',
@@ -2712,40 +2712,40 @@ var symbols = {
       fill: ['rgba(0,0,0,0)','images/CloseSub.png','0px','0px']
    },
    {
+      rect: ['370px','81px','304px','16px','auto','auto'],
       font: ['Verdana, Geneva, sans-serif',16,'rgba(0,106,54,1)','normal','none','normal'],
-      type: 'text',
       display: 'none',
       id: 'Text3',
       text: 'Before-classroom delivery',
       align: 'left',
-      rect: ['370px','81px','304px','16px','auto','auto']
+      type: 'text'
    },
    {
+      rect: ['308px','109px','366px','170px','auto','auto'],
       font: ['Verdana, Geneva, sans-serif',14,'rgba(102,102,102,1.00)','normal','none','normal'],
-      type: 'text',
       display: 'none',
       id: 'Text3Copy',
       text: 'Preparation is key to successful lesson delivery. The Online Orientation Training (OOT) includes very useful tips on preparation for your lessons. We highly recommend that you revisit this section from time to time.',
       align: 'left',
-      rect: ['308px','109px','366px','170px','auto','auto']
+      type: 'text'
    },
    {
+      rect: ['370px','79px','304px','19px','auto','auto'],
       font: ['Verdana, Geneva, sans-serif',16,'rgba(0,106,54,1)','normal','none','normal'],
-      type: 'text',
       display: 'none',
       id: 'Text3Copy3',
       text: 'After-classroom delivery',
       align: 'left',
-      rect: ['370px','79px','304px','19px','auto','auto']
+      type: 'text'
    },
    {
+      rect: ['127px','101px','366px','170px','auto','auto'],
       font: ['Verdana, Geneva, sans-serif',14,'rgba(102,102,102,1.00)','normal','none','normal'],
-      type: 'text',
       display: 'none',
       id: 'Text3Copy2',
       text: 'It is extremely important for volunteers to reflect on the lessons delivered. We always recommend that you write down any success stories gathered from your students as well as best practice and case studies.',
       align: 'left',
-      rect: ['127px','101px','366px','170px','auto','auto']
+      type: 'text'
    },
    {
       type: 'image',
@@ -2892,10 +2892,10 @@ var symbols = {
             ["style", "font-size", '14px']
          ],
          "${_CloseSub}": [
-            ["style", "display", 'none'],
-            ["style", "left", '131px'],
+            ["style", "top", '12px'],
             ["style", "cursor", 'pointer'],
-            ["style", "top", '12px']
+            ["style", "left", '131px'],
+            ["style", "display", 'none']
          ],
          "${_SubBG}": [
             ["style", "top", '0px'],
@@ -2972,12 +2972,12 @@ var symbols = {
          fill: ['rgba(255,108,0,1.00)']
       },
       {
+         rect: ['22px','3px','104px','13px','auto','auto'],
          font: ['Verdana, Geneva, sans-serif',10,'rgba(0,106,54,1.00)','400','none','normal'],
-         type: 'text',
          id: 'Link1_1',
          text: 'Getting ready',
          align: 'left',
-         rect: ['22px','3px','104px','13px','auto','auto']
+         type: 'text'
       }]
    },
    {
@@ -2994,12 +2994,12 @@ var symbols = {
          fill: ['rgba(255,108,0,1.00)']
       },
       {
+         rect: ['22px','7px','114px','13px','auto','auto'],
          font: ['Verdana, Geneva, sans-serif',10,'rgba(0,106,54,1.00)','400','none','normal'],
-         type: 'text',
          id: 'Link1_2',
          text: 'Online-schedule',
          align: 'left',
-         rect: ['22px','7px','114px','13px','auto','auto']
+         type: 'text'
       }]
    },
    {
@@ -3008,12 +3008,12 @@ var symbols = {
       rect: ['622px','318px','126','19','auto','auto'],
       c: [
       {
+         rect: ['0px','3px','126px','16px','auto','auto'],
          font: ['Verdana, Geneva, sans-serif',10,'rgba(0,106,54,1.00)','normal','none','normal'],
-         type: 'text',
          id: 'Link1_Close',
          text: 'Close',
          align: 'center',
-         rect: ['0px','3px','126px','16px','auto','auto']
+         type: 'text'
       },
       {
          id: 'OrangeArrow',
@@ -3038,40 +3038,40 @@ var symbols = {
       fill: ['rgba(0,0,0,0)','images/CloseSub.png','0px','0px']
    },
    {
+      rect: ['129px','81px','304px','16px','auto','auto'],
       font: ['Verdana, Geneva, sans-serif',16,'rgba(0,106,54,1)','normal','none','normal'],
-      type: 'text',
       display: 'none',
       id: 'Text3',
       text: 'Getting ready',
       align: 'left',
-      rect: ['129px','81px','304px','16px','auto','auto']
+      type: 'text'
    },
    {
+      rect: ['127px','106px','366px','170px','auto','auto'],
       font: ['Verdana, Geneva, sans-serif',14,'rgba(102,102,102,1.00)','normal','none','normal'],
-      type: 'text',
       display: 'none',
       id: 'Text3Copy',
       text: 'The online orientation provides very useful tools and techniques for effective classroom delivery. Use them and enjoy the process.',
       align: 'left',
-      rect: ['127px','106px','366px','170px','auto','auto']
+      type: 'text'
    },
    {
+      rect: ['131px','79px','304px','19px','auto','auto'],
       font: ['Verdana, Geneva, sans-serif',16,'rgba(0,106,54,1)','normal','none','normal'],
-      type: 'text',
       display: 'none',
       id: 'Text3Copy3',
       text: 'Online-schedule',
       align: 'left',
-      rect: ['131px','79px','304px','19px','auto','auto']
+      type: 'text'
    },
    {
+      rect: ['308px','103px','366px','96px','auto','auto'],
       font: ['Verdana, Geneva, sans-serif',14,'rgba(102,102,102,1.00)','normal','none','normal'],
-      type: 'text',
       display: 'none',
       id: 'Text3Copy2',
       text: 'You will be able to manage your volunteer schedule online. Interaction with INJAZ staff will ensure effective time-management and close communication with you…our volunteer.<br><br>\r\rThe actual time and effort required from you: <br>\r-One hour a week<br>\r-7 to 14 weeks ( During Workdays )',
       align: 'left',
-      rect: ['308px','103px','366px','96px','auto','auto']
+      type: 'text'
    },
    {
       type: 'image',
@@ -3199,10 +3199,10 @@ var symbols = {
             ["style", "font-size", '14px']
          ],
          "${_CloseSub}": [
-            ["style", "display", 'none'],
-            ["style", "left", '131px'],
+            ["style", "top", '12px'],
             ["style", "cursor", 'pointer'],
-            ["style", "top", '12px']
+            ["style", "left", '131px'],
+            ["style", "display", 'none']
          ],
          "${_Link1_1Group}": [
             ["style", "left", '612px'],
@@ -3263,12 +3263,12 @@ var symbols = {
    content: {
    dom: [
    {
+      font: ['Arial, Helvetica, sans-serif',14,'rgba(102,102,102,1.00)','400','none',''],
       type: 'text',
-      rect: ['0px','0px','526px','152px','auto','auto'],
       id: 'Text',
       text: '1.More productive and satisfied employees.\r<br>2. A better bottom line and an improved standing in the community. <br>\r3.It can further develop an employee’s business skills.\r<br>4.Enhancement of transferable job-related skills like morale, motivation, job satisfaction, self-esteem and positive attitudes toward the employer.\r<br>5. Communication skills — written and verbal\r<br>6. Organization and time-management skills.\r<br>7.People skills — caring, listening and negotiating.<br>\r8. Accountability and assessment reporting.\r<br>9.Planning skills — development of objectives.\r<br>10.Budget development and allocation skills\r<br>11.Survival skills — stress management and priority setting\r<br>12.Increased understanding of coworkers and respect for diversity\r<br>13. More innovative responses to difficulty<br>\r14.Enhanced risk-taking\r<br>15.Greater appreciation of benefits provided by employers<br>\r16.Enlarged sense of community and social obligation\r<br>17.Greater appreciation of contributions from all levels of the organization\r<br>18.Affirmation of personal capability and worth<br>\r19.An opportunity to shape their future workforce.<br>\r20.The ability to help create sustainable business opportunities.\r',
       align: 'left',
-      font: ['Arial, Helvetica, sans-serif',14,'rgba(102,102,102,1.00)','400','none','']
+      rect: ['0px','0px','526px','152px','auto','auto']
    }],
    symbolInstances: [
    ]
